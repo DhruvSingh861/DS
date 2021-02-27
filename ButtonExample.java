@@ -34,5 +34,5 @@ f.add(b);f.add(tf);
 f.setSize(400,400);  
 f.setLayout(null);  
 f.setVisible(true);   
-}  
+} 
 }  
