@@ -1,0 +1,21 @@
+import java.net.*;
+import java.io.*;
+public class Client1{
+public static void main(String args[]) throws Exception{
+Server s=new Server("localhost",1001);
+DataInputStream dis=new DataInputStream(s.getInputStream());
+DataOutputStream dos=new DataOutputStream(s.getOutputStream());
+BufferReader br=new BufferReader(new InputStreamReader(System.in));
+String str1="";
+String str2="";
+
+while(!str1.equals("stop")){
+Str1=br.readLine();
+dout.flush();
+str2=din.readUTF();
+System.out.println("Server says:"+str2);
+}
+dout.close();
+s.close();
+}
+}
